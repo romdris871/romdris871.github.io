@@ -1,0 +1,518 @@
+/* styles.css */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* body y fuente global */
+body {
+    background-color: #FAFAFA;
+    font-family: 'Open Sans', Arial, sans-serif;
+    color: #222;
+}
+
+/* Hero principal */
+.hero {
+    position: relative;
+    width: 100%;
+    min-height: 500px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+/*-------------------------------------------------------*/
+
+/* Nav sobre la imagen */
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    background: transparent;
+    padding-bottom: 0;
+}
+
+.main-nav a { /* Estilo para enlaces si los hay */
+    color: #fff;
+    text-decoration: none;
+}
+
+.main-nav {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.35); /* Fondo semitransparente */
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+    padding: 20px 0 10px 0;
+}
+
+.main-nav ul { /* Flexbox para distribuir los elementos */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    width: 50%;
+    max-width: 80%; /* Ajusta según el ancho de tu imagen */
+    margin: 0 auto;
+}
+
+.main-nav .nav-left,
+.main-nav .nav-right {
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.main-nav .nav-center a {
+    position: relative;
+    color: #fff;
+    font-size: 4rem;
+    font-weight: 700;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.18);
+    text-align: left;
+    line-height: 1;
+    display: inline-block;
+    font-family: 'Open Sans', Arial, sans-serif;
+}
+
+.main-nav .nav-ba { /* ERROR EN margin-left */
+    display: block;
+    font-size: 1rem;
+    margin-left: 12.2em; /* Ajusta solo lo necesario para que BA quede debajo de TH */
+    margin-top: 0.1em;
+    color: #fff;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.18);
+}
+
+/*-------------------------------------------------------*
+
+/* Productos */
+/* Las imagenes deben corregirse para tener el mismo tamaño */
+/* IMG-FONDO DE LA SECCION -ONE BE ONE- */
+.onebeone-bg {
+    position: relative;
+    background-image: url('img/onebeone.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 500px; /* Ajusta según tu diseño */
+}
+
+.onebeone-bg > * {
+    position: relative;
+    z-index: 2;
+}
+
+/* Opcional: agrega un overlay para oscurecer o aclarar la imagen */
+.onebeone-bg::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(255,255,255,0.6); /* Ajusta opacidad y color */
+    z-index: 1;
+}
+
+
+.productos {
+  font-family:'Open Sans', Arial, sans-serif;
+}
+
+.tit-prod {
+  text-align: center;
+  margin: 10px;
+  font-weight: bold;
+  color: #0e0d0d4b;
+  font-size: 20px;
+  font-family: 'Open Sans', Arial, sans-serif;
+  
+}
+
+.prod-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 16px;
+
+}
+
+.prod-item {
+  border: 2px solid rgb(231, 231, 231);
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.item-tit {
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.imagen-card {
+  width: 280px;
+  height: 350px;
+  object-fit: cover;     /* Recorta sin deformar */
+  object-position: center; /* Centra la parte visible */
+  display: block;
+}
+
+.precio {
+  font-size: 15px;
+  color: red;
+  font-weight: 600;
+  margin: 8px 0;
+}
+
+.off {
+  color: green;
+  font-size: medium;
+}
+
+.descripcion {
+  width: 280px;
+  margin-bottom: 8px;
+  font-size: x-small;
+}
+
+/*-------------------------------------------------------*
+
+/* Prueba de imagen con texto arriba*/
+
+/*.prod-img-container {
+  position: relative;
+  width: 220px;  Ajusta según tu imagen (COMENTAR AL DESCOMENTAR)
+  height: 320px;  Ajusta según tu imagen (COMENTAR AL DESCOMENTAR)
+  overflow: hidden;
+}
+
+.prod-img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.prod-info {
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  color: #fff;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+  font-family: 'Open Sans', Arial, sans-serif;
+}
+
+.item-tit {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 2px;
+}
+
+.precio {
+  font-size: 1rem;
+  color: #ff4d4d;
+  font-weight: 700;
+  display: inline-block;
+}
+
+.precio-old {
+  color: #fff;
+  font-size: 0.9rem;
+  text-decoration: line-through;
+  margin-left: 6px;
+  opacity: 0.7;
+} */
+
+.botonera {
+  text-align: center;
+}
+
+.btn-agregar {
+  background-color: rgba(0, 0, 0, 0.842);
+  color: rgb(207, 207, 207);
+  font-size: 15px;
+  padding: 8px;
+  border-radius: 8px;
+}
+
+.btn-agregar:hover {
+  background-color: grey;
+}
+
+/*-------------------------------------------------------*
+
+/* Shoth mood */
+
+/* Sección general */
+.shothmood {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #f5f5f5, #e8e8e8);
+  text-align: center;
+  overflow: hidden;
+}
+
+/* Fondo decorativo */
+.shothmoodbg {
+  position: absolute;
+  inset: 0;
+  background: url('img/shothmoodbg00.png') center/cover no-repeat;
+  opacity: 0.15;
+  z-index: 0;
+}
+
+/* Imagen principal */
+.gallery img {
+  width: 800px;
+  max-width: 90%;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+
+/*  Nota adhesiva === cambiar por la original 13/10*/
+
+.note {
+  position: absolute;
+  top: 2vw;
+  right: 10vw;
+  background-color: #fdf4a3;
+  padding: 15px 20px;
+  max-width: 190px;
+  border-radius: 4px;
+  text-align: left;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+  font-family: "Poppins", sans-serif;
+}
+
+.note p {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  color: #222;
+  margin: 0;
+}
+
+.note span {
+  display: block;
+  margin-top: 5px;
+  font-size: 0.8rem;
+  color: #444;
+}
+
+/* Mood Image section */
+.moodimg {
+  background: url('img/shothmoodbg00.png') center/cover no-repeat;
+  padding: 60px 20px;
+  text-align: center;
+  color: #111;
+  position: relative;
+}
+
+.moodimg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  backdrop-filter: blur(3px);
+}
+
+/* Título */
+.mood-title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 1.4rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 1;
+}
+
+/* Redes sociales */
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.socials a {
+  font-size: 1.5rem;
+  color: #111;
+  transition: all 0.3s ease;
+}
+
+.socials a:hover {
+  color: #ff4d6d; /* tono de contraste elegante */
+  transform: scale(1.1);
+}
+
+
+/*-------------------------------------------------------*
+
+/* Formulario / Contacto */
+
+.contacto {
+    position: relative;
+    background-image: url('img/contactobg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 500px; /* Ajusta según tu diseño */ 
+    color: #e9ebf1;
+}
+
+.tit-contacto {
+  font-size: clamp(32px, 8vw, 64px);
+  text-align: center;
+  font-family: 'Open Sans', Arial, sans-serif;
+  color: rgb(255, 255, 255);
+}
+
+.subtit-contacto {
+  font-size: clamp( 4vw, 24px);
+  text-align: center;
+  font-family: 'Open Sans', Arial, sans-serif;
+  margin: 16px;
+}
+
+.form-container {
+  text-align: center;
+  padding-bottom: 16px;
+}
+
+.formulario {
+  background-color: rgba(226, 206, 206, 0.459);
+  font-size: 16px;
+  border: 2px solid rgba(0, 0, 0, 0.151);
+  border-radius: 8px;
+  width: 300px;
+  margin: auto;
+}
+
+input[type=text],[type=email],textarea {
+  color: rgb(0, 0, 0);
+  border: none;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+input[type=text] {
+  margin: 32px;
+  border-bottom: 1px solid rgb(255, 255, 255) ;
+}
+
+input[type=email] {
+  margin-bottom: 32px;
+  border-bottom: 1px solid rgb(255, 255, 255) ;
+}
+
+.mensaje {
+  margin-bottom: 32px;
+  border: 1px solid rgb(255, 255, 255) ;
+  padding: 2px;
+  font-family: 'Open Sans', Arial, sans-serif;
+}
+
+.btn-enviar {
+  margin-bottom: 32px;
+  padding: 8px;
+  background-color: #332f2fe3;
+  color:  rgb(207, 207, 207);
+  font-size: 16px;
+  border-radius: 8px;
+  
+}
+
+.btn-enviar:hover {  
+  background-color: #252525;
+}
+
+/*-------------------------------------------------------*
+
+/* Footer */
+.footer { 
+  background-color: #050505;
+  color: azure;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+  padding: 32px 0;
+  gap: 16px 0;
+}
+
+.footer-links {
+  width: 30%;
+  font-size: clamp(16px, 8vw, 32px);
+}
+
+.footer-ul {
+  list-style-type: none;
+  font-family: 'Open Sans', Arial, sans-serif;
+}
+
+.footer-mapa {
+ width: 40%;
+ height: auto;
+}
+
+.footer-redes {
+  width: 30%;
+}
+
+.footer-redes svg { /* iconos de redes sociales */
+  width: 80px;
+  fill: azure;
+}
+
+.copyright {
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: clamp(8px, 4vw, 16px);
+  text-align: center;
+  background-color: #000;
+  color: azure;
+}
+
+
+/*-------------------------------------------------------*/
+
+/* Responsive para nav y hero */
+@media (max-width: 900px) {
+    .main-nav .nav-center {
+        font-size: 2.5rem;
+    }
+    .main-nav ul {
+        width: 98%;
+    }
+    .hero {
+        min-height: 300px;
+    }
+}
+
+@media (max-width: 700px) { /* la idea de ocultar los laterales es para cambiarlos por un boton */
+    .main-nav .nav-left,
+    .main-nav .nav-right {
+        display: none;
+    }
+    .main-nav ul {
+        justify-content: center;
+        gap: 0;
+    }
+}
