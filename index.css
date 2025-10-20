@@ -446,8 +446,8 @@ input[type=email] {
 /*-------------------------------------------------------*
 
 /* Footer */
-.footer { 
-  background-color: #050505;
+.footer {
+  background-color: #000000;
   color: azure;
   display: flex;
   flex-direction: row;
@@ -465,25 +465,24 @@ input[type=email] {
 
 .footer-ul {
   list-style-type: none;
-  font-family: 'Open Sans', Arial, sans-serif;
+  font-family: 'BBH Sans Bogle', Verdana, Tahoma, sans-serif;
 }
 
 .footer-mapa {
  width: 40%;
- height: auto;
 }
 
 .footer-redes {
   width: 30%;
 }
 
-.footer-redes svg { /* iconos de redes sociales */
+.footer-redes svg {
   width: 80px;
   fill: azure;
 }
 
 .copyright {
-  font-family: 'Open Sans', Arial, sans-serif;
+  font-family: Roboto, sans-serif;
   font-size: clamp(8px, 4vw, 16px);
   text-align: center;
   background-color: #000;
@@ -514,5 +513,13 @@ input[type=email] {
     .main-nav ul {
         justify-content: center;
         gap: 0;
+    }
+}
+
+/* Responsive para mapa */
+@media (max-width: 768px) {
+    .footer-mapa {
+        width: 80%;
+        padding-bottom: 75%; /* Ajusta según la relación de aspecto deseada */
     }
 }
