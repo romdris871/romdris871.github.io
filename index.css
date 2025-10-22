@@ -7,7 +7,7 @@
 /* body y fuente global */
 body {
     background-color: #FAFAFA;
-    font-family: 'Open Sans', Arial, sans-serif;
+    font-family: "Six Caps",'Open Sans', Arial, sans-serif;
     color: #222;
 }
 
@@ -52,7 +52,7 @@ header {
     background: rgba(255, 255, 255, 0.35); /* Fondo semitransparente */
     border-radius: 0 0 20px 20px;
     box-shadow: 0 4px 24px rgba(0,0,0,0.08);
-    padding: 20px 0 10px 0;
+    padding: 10px 0 10px 0;
 }
 
 .main-nav ul { /* Flexbox para distribuir los elementos */
@@ -71,18 +71,21 @@ header {
     font-size: 1.2rem;
     font-weight: 400;
     text-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 20px;
 }
 
 .main-nav .nav-center a {
     position: relative;
     color: #fff;
     font-size: 4rem;
-    font-weight: 700;
     text-shadow: 0 2px 8px rgba(0,0,0,0.18);
     text-align: left;
     line-height: 1;
     display: inline-block;
     font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 400;
+    font-style: normal;
 }
 
 .main-nav .nav-ba { /* ERROR EN margin-left */
@@ -99,6 +102,7 @@ header {
 /* Productos */
 /* Las imagenes deben corregirse para tener el mismo tamaño */
 /* IMG-FONDO DE LA SECCION -ONE BE ONE- */
+
 .onebeone-bg {
     position: relative;
     background-image: url('img/onebeone.png');
@@ -107,6 +111,8 @@ header {
     background-repeat: no-repeat;
     width: 100%;
     min-height: 500px; /* Ajusta según tu diseño */
+    overflow: hidden; /* evita margin collapse y quita huecos inesperados */
+    padding-top: 12px; /* opcional: controla el espacio interior superior */
 }
 
 .onebeone-bg > * {
@@ -128,15 +134,17 @@ header {
   font-family:'Open Sans', Arial, sans-serif;
 }
 
+
+/* ajustar el título para quitar margen superior excesivo */
 .tit-prod {
   text-align: center;
-  margin: 10px;
+  margin: 20px 0 30px; /* reducir margen superior */
   font-weight: bold;
-  color: #0e0d0d4b;
+  color: #000000a1;
   font-size: 20px;
-  font-family: 'Open Sans', Arial, sans-serif;
-  
+  font-family: "Poppins", sans-serif;
 }
+
 
 .prod-container {
   display: flex;
@@ -148,7 +156,7 @@ header {
 }
 
 .prod-item {
-  border: 2px solid rgb(231, 231, 231);
+  border: 1px solid rgb(231, 231, 231);
   border-radius: 5px;
   padding: 5px;
 }
@@ -368,7 +376,7 @@ header {
 
 .contacto {
     position: relative;
-    background-image: url('img/contactobg.png');
+    background-image: url('img/contactobg01.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -380,7 +388,7 @@ header {
 .tit-contacto {
   font-size: clamp(32px, 8vw, 64px);
   text-align: center;
-  font-family: 'Open Sans', Arial, sans-serif;
+  font-family: 'Six Caps','Open Sans', Arial, sans-serif;
   color: rgb(255, 255, 255);
 }
 
@@ -447,6 +455,7 @@ input[type=email] {
 
 /* Footer */
 .footer {
+  background-image: url('img/footerbg.png');
   background-color: #000000;
   color: azure;
   display: flex;
@@ -454,8 +463,8 @@ input[type=email] {
   flex-wrap: wrap;
   align-items: center;
   text-align: center;
-  padding: 32px 0;
-  gap: 16px 0;
+  padding: 3px 0;
+  gap: 1px 0;
 }
 
 .footer-links {
@@ -464,8 +473,38 @@ input[type=email] {
 }
 
 .footer-ul {
-  list-style-type: none;
-  font-family: 'BBH Sans Bogle', Verdana, Tahoma, sans-serif;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem; /* separacion entre elementos si hay varios */
+}
+
+.footer-ul li {
+    margin: 0;
+    padding: 0;
+}
+
+.footer-ul a {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer-ul a img {
+    display: block;
+    width: 200px;    /* ajustar tamaño del logo */
+    height: auto;
+    object-fit: contain;
+    border-radius: 50%; /* opcional: hace el logo circular */
+    background: transparent; /* o #fff si quieres fondo */
+    padding: 50px; /* opcional: espacio interior */
+}
+
+.footer a {
+    text-decoration: none;
+    color: inherit; /* evita color morado/azul en enlaces */
 }
 
 .footer-mapa {
@@ -482,7 +521,7 @@ input[type=email] {
 }
 
 .copyright {
-  font-family: Roboto, sans-serif;
+  font-family: 'BBH Sans Bogle', Verdana, Tahoma, sans-serif;
   font-size: clamp(8px, 4vw, 16px);
   text-align: center;
   background-color: #000;
